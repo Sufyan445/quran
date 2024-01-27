@@ -63,9 +63,7 @@ const index = ({
   if (textData && singleData) {
     return (
       <div className="every">
-        <Head>
-          <link rel="manifest" href="/manifest.json" />
-        </Head>
+        
         <div className="flex flex-col justify-center items-center">
           <label htmlFor="surah">Choose Surah:</label>
           <select
