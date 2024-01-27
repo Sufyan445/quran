@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Noto_Sans_Arabic } from "next/font/google";
+import { Head } from "next/document";
 
 const arabic = Noto_Sans_Arabic({ weight: ["600"], subsets: ["arabic"] });
 
@@ -62,6 +63,9 @@ const index = ({
   if (textData && singleData) {
     return (
       <div className="every">
+        <Head>
+          <link rel="manifest" href="/manifest.json" />
+        </Head>
         <div className="flex flex-col justify-center items-center">
           <label htmlFor="surah">Choose Surah:</label>
           <select
