@@ -2,8 +2,8 @@ import Hero from "@/components/Hero";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Noto_Sans_Arabic } from "next/font/google";
-import { Head } from "next/document";
-
+import Head from 'next/head'
+ 
 const arabic = Noto_Sans_Arabic({ weight: ["600"], subsets: ["arabic"] });
 
 const index = ({
