@@ -2,8 +2,7 @@ import Hero from "@/components/Hero";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Noto_Sans_Arabic } from "next/font/google";
-import Head from 'next/head'
- 
+
 const arabic = Noto_Sans_Arabic({ weight: ["600"], subsets: ["arabic"] });
 
 const index = ({
@@ -24,6 +23,7 @@ const index = ({
   const [translator, setTranslator] = useState("ur.najafi");
 
   const router = useRouter();
+  
   useEffect(() => {
     if (surah && Qari && translator) {
       router.push(`?s=${surah}&q=${Qari}&t=${translator}`);
@@ -63,7 +63,6 @@ const index = ({
   if (textData && singleData) {
     return (
       <div className="every">
-        
         <div className="flex flex-col justify-center items-center">
           <label htmlFor="surah">Choose Surah:</label>
           <select
