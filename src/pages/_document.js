@@ -15,8 +15,8 @@ export default function Document() {
           type="image/png"
           sizes="512x512"
           href="/icons/android-chrome-512x512.png"
-        />
-        <link rel="manifest" href="/manifest.json" />
+        />{/* 
+        <link rel="manifest" href="/manifest.json" /> */}
       </Head>
       <body>
         <Main />
